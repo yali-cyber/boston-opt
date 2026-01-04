@@ -272,13 +272,13 @@
         // Free Offer Component
         const FreeOffer = () => {
             const curriculum = [
-                { day: "Day 1", title: "なぜスピリチュアルで人生が悪化するのか？", desc: "痛スピの正体と脱却の第一歩" },
-                { day: "Day 2", title: "引き寄せの法則の「致命的な誤解」", desc: "99%の人が間違えている本質" },
-                { day: "Day 3", title: "現実逃避と本質的変容の違い", desc: "あなたの実践が効かない理由" },
-                { day: "Day 4", title: "借金1億からの逆転劇", desc: "私の体験から学ぶ真実" },
-                { day: "Day 5", title: "希望周波数の正しい使い方", desc: "エネルギーワークの本質" },
-                { day: "Day 6", title: "人間関係を修復する量子的アプローチ", desc: "科学とスピの融合" },
-                { day: "Day 7", title: "人生の前提を書き換える方法", desc: "6ヶ月で人生が変わる秘密" },
+                { day: "Day 1", title: "99%の人が知らない「脳のバグ」と逆引き寄せの正体", desc: "なぜ願えば願うほど遠ざかるのか" },
+                { day: "Day 2", title: "借金1億の地獄で私が気づいた「ある法則」", desc: "どん底から這い上がれた本当の理由" },
+                { day: "Day 3", title: "現実を書き換える「3つの手順」を公開します", desc: "今日からできる具体的メソッド" },
+                { day: "Day 4", title: "3分で完了。あなたの「腐った種」を特定するワーク", desc: "人生を狂わせる根本原因を発見" },
+                { day: "Day 5", title: "脳の「貧乏回路」を物理的に切断する方法", desc: "科学的アプローチで思考を変える" },
+                { day: "Day 6", title: "脳を騙して「理想の未来」を現実化させる技術", desc: "潜在意識を味方につける秘訣" },
+                { day: "Day 7", title: "お金が逃げていく人の「口癖」と、愛される人の「儀式」", desc: "日常習慣で人生が変わる" },
             ];
 
             const bonuses = [
@@ -306,12 +306,12 @@
                         <div className="max-w-4xl mx-auto">
                             <div className="grid gap-4 mb-12">
                                 {curriculum.map((item, index) => (
-                                    <div key={index} className="reveal-base bg-[#F8FAFC] p-6 rounded-lg flex items-center gap-6 border border-gray-100 hover:border-[#B49647] transition-colors" style={{transitionDelay: `${index * 50}ms`}}>
-                                        <div className="bg-[#1E3A8A] text-white px-4 py-2 rounded font-bold text-sm flex-shrink-0">
+                                    <div key={index} className="reveal-base bg-[#F8FAFC] p-6 rounded-lg flex flex-col md:flex-row md:items-center gap-4 md:gap-6 border border-gray-100 hover:border-[#B49647] transition-colors" style={{transitionDelay: `${index * 50}ms`}}>
+                                        <div className="bg-[#1E3A8A] text-white px-4 py-2 rounded font-bold text-sm flex-shrink-0 self-start">
                                             {item.day}
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-[#0F172A] mb-1">{item.title}</h3>
+                                            <h3 className="font-bold text-[#0F172A] mb-1 leading-snug">{item.title}</h3>
                                             <p className="text-[#64748B] text-sm">{item.desc}</p>
                                         </div>
                                     </div>
@@ -443,13 +443,6 @@
             console.log('✅ BOSTON METHOD オプトインLPが正常にレンダリングされました');
         } catch (error) {
             console.error('❌ レンダリングエラー:', error);
-            document.body.innerHTML = `
-                <div style="padding: 40px; text-align: center; font-family: sans-serif;">
-                    <h1 style="color: #c00;">レンダリングエラーが発生しました</h1>
-                    <p style="color: #666; margin: 20px 0;">ブラウザのコンソール(F12キー)を開いて詳細を確認してください</p>
-                    <pre style="background: #f5f5f5; padding: 20px; text-align: left; overflow: auto;">${error.toString()}\n${error.stack}</pre>
-                </div>
-            `;
         }
     </script>
 </body>
